@@ -3,6 +3,8 @@ import os, sys, re
 from platform import python_version
 from pathlib import Path
 
+class MyVar
+
 # accept 1 arguments 
 args = sys.argv[1:3]
 

@@ -31,3 +31,23 @@ enable virtual env
 install flask
 
 
+    1. Install Flask: Open your terminal and run:
+   pip install Flask
+    1. Create a Project Directory: Create a new directory for your project and navigate into it:
+   mkdir my_flask_app
+   cd my_flask_app
+    1. Create a Python File: Inside your project directory, create a new Python file, e.g., app.py.
+    2. Write Your Flask App: Open app.py and add the following code:
+   from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+   def home():
+       return "Hello, Flask!"
+if __name__ == '__main__':
+       app.run(debug=True)
+    1. Run Your Flask App: In your terminal, run:
+   python app.py
+Your app should be running at http://127.0.0.1:5000/.
+Additional Tips
+    • Templates: Create an index.html file in a templates folder to render HTML.
+    • Static Files: Use a static folder for CSS, JavaScript, and images.
