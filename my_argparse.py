@@ -25,7 +25,7 @@ def main():
         # filename most be alphanumeric characters and underscores only
         if re.match(r'[A-Za-z0-9_-]+$', myfoldername):
             Path(mypath, myfoldername).mkdir()
-            Path(os.path.join(basedir, myfoldername, 'app')).mkdir()
+            Path(mypath, myfoldername, 'app').mkdir()
         else:
             print('''
                 not supported filename
@@ -39,7 +39,7 @@ def main():
 
     for i in toplistoffiles:
         
-        with open(os.path.join(basedir, myfoldername, i ), 'w') as f:
+        with open(Path(mypath, myfoldername, i ), 'w') as f:
             if i == 'LICENSE':
                 f.write(myclassvar.licensecontent)
             if i == 'README.md':
@@ -49,9 +49,9 @@ def main():
 
 
     for j in subfoldernames:
-        Path(os.path.join(basedir, myfoldername, 'app', j)).mkdir()
+        Path(Path(mypath, myfoldername, 'app', j)).mkdir()
         for k in sublistoffiles:
-            with open(os.path.join(basedir, myfoldername, 'app', k ), 'w') as f:
+            with open(Path(mypath, myfoldername, 'app', k ), 'w') as f:
                 if k == '__init__.py':
                     f.write(myclassvar.myinitcontent)
                 if k == 'routes.py':
@@ -61,11 +61,11 @@ def main():
                 if k == 'schema.sql':
                     f.write(myclassvar.dbschemasetup)
         if j == 'templates':
-            with open(os.path.join(basedir, myfoldername, 'app', j, 'index.html'), 'w') as f:
+            with open(Path(mypath, myfoldername, 'app', j, 'index.html'), 'w') as f:
                 f.write(myclassvar.myhtmlindex)
         if j == 'static':
-            os.mkdir(os.path.join(basedir, myfoldername, 'app', j, 'css'))
-            with open(os.path.join(basedir, myfoldername, 'app', j, 'css', 'main.css'), 'w') as f:
+            os.mkdir(Path(mypath, myfoldername, 'app', j, 'css'))
+            with open(Path(mypath, myfoldername, 'app', j, 'css', 'main.css'), 'w') as f:
                 f.write(myclassvar.mycsscontent)
             
 if __name__ == '__main__':

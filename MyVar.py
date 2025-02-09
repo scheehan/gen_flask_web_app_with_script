@@ -71,6 +71,7 @@ class myclassvar():
         background-color: #f0f0f0;
         padding: 20px;
         border-radius: 5px;
+    }
     '''
 
     myinitcontent = '''from flask import Flask
