@@ -35,6 +35,9 @@ def main():
     except FileExistsError as inst:
         print(inst)
         sys.exit(1)
+    except TypeError as inst:
+        print(inst)
+        sys.exit(1)
 
 
     for i in toplistoffiles:

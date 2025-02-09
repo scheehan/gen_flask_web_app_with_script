@@ -1,5 +1,7 @@
 # How to create flask app with python script
 
+This tutorial provides a step-by-step guide on creating a basic Flask web application using Python.  We'll cover everything from setting up your development environment to displaying your first webpage.  Perfect for beginners, this guide requires no prior web development experience and will equip you with the foundational knowledge to start building your own Python web apps.
+
 allow to create flask app with single script
 
 create necessary flask structure and basic files to get flask web app running
