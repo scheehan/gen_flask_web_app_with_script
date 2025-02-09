@@ -1,0 +1,14 @@
+.container {
+            display: flex;
+            justify-content: center; /* Horizontally center content */
+            align-items: center; /* Vertically center content */
+            height: 100vh; /* Make the container take up the full viewport height (optional) */
+            width: 100vw; /* Make the container take up the full viewport width (optional) */
+
+    }
+    .centered-content {
+        /* Styling for the centered content (optional) */
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+    
