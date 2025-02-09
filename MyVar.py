@@ -45,19 +45,6 @@ class Config(object):
 
     </head>
     <body>
-        <hr>
-        <br>
-        <div class="container">
-        <div class="centered-content">
-        <p>Flask web app</p>
-        <p>{{ myposts }}</p>
-        <br>
-        <iframe width="420" height="315"
-        src="https://youtube.com/embed/JqLqYW-zdQY?html5=1">
-        </iframe>
-    </div>
-    </div>
-    
     
     <!-- Start Top Bar -->
     <div class="top-bar">
