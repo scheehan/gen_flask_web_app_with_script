@@ -88,6 +88,7 @@ class Config(object):
         <br>
         <iframe width="420" height="315"
         src="https://youtube.com/embed/JqLqYW-zdQY?html5=1">
+        </iframe>
         <div class="callout">
           <ul class="menu simple">
             <li><a href="#">Author: Mike Mikers</a></li>
