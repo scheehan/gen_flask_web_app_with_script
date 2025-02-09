@@ -68,22 +68,6 @@ Your app should be running at http://127.0.0.1:5000/.
 Additional Tips
     • Templates: Create an index.html file in a templates folder to render HTML.
     • Static Files: Use a static folder for CSS, JavaScript, and images.
-<button popovertarget="mypopover-1" popovertargetaction="show">
-      Show popover #1
-    </button>
-<button popovertarget="mypopover-2" popovertargetaction="show">
-      Show popover #2
-    </button>
-<div id="mypopover-1" popover="" style="background-color:#ededed;inset: unset;position: absolute;bottom: 5px;
-  right: 5px;
-  margin: 0;"><blockquote>Popover content #1</blockquote></div>
-<div id="mypopover-2" popover="" style="background-color:#ededed;"><blockquote>Popover content #2</blockquote></div>
-
-<button popovertarget="my-popover">Open Popover</button>
-
-<div popover id="my-popover">```
-python -m venv .venv
-```</div>
 
 
 [1]: https://get.foundation/templates.html
