@@ -1,6 +1,6 @@
 # How to create flask app with python script
 
-
+![my_intro](/images/web_app_generator.png)
 
 This article elaborate a step-by-step guide on creating a basic Flask web application using Python.  We'll cover everything from setting up your development environment to displaying your first webpage. Perfect for beginners, this guide requires no prior web development experience and will equip you with the foundational knowledge to start building your own Python web apps with Flask Web templates.
 
@@ -21,14 +21,15 @@ cannot
 - setup virtual env
 - install python package
 
-```
+```python
 python -m venv .venv
 ```
-python3 -m venv <DIR>
-source <DIR>/bin/activate
 
-py -m venv <DIR>
-<DIR>\Scripts\activate
+python3 -m venv \<path\>  
+source \<path\>/bin/activate
+
+py -m venv \<path\>  
+\<DIR\>\Scripts\activate
 
 python3 -m pip install -r requirements.txt
 
