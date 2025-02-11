@@ -1,5 +1,6 @@
-import argparse
-import os, sys, re
+import argparse, os, sys, re
+
+# collection of files content to be insert into respective docs
 from MyVar import myclassvar
 
 from platform import python_version
@@ -13,9 +14,13 @@ parser.add_argument(dest='foldername', metavar='foldername', nargs='?', action='
 parser.add_argument('-a', '--app', metavar='app name', dest='progr', action='store', default='flask')
 
 args = parser.parse_args()
+
+# map respective parameter data into local var
 myfoldername = args.foldername
 mypath = args.path
+myapp = args.progr
 
+# Flask file structure filename and foldername
 toplistoffiles = ['LICENSE', 'README.md', 'config.py', ]
 sublistoffiles = ['__init__.py', 'routes.py', 'db.py', 'schema.sql']
 subfoldernames = ['templates', 'static']
