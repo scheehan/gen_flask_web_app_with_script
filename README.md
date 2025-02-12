@@ -127,3 +127,5 @@ Additional Tips
 如何使用 Python 脚本创建 Flask 应用程序
 
 Bagaimana untuk membuat aplikasi kelalang dengan skrip python
+
+working on it gif as animation
