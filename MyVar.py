@@ -205,21 +205,30 @@ def index():
     # conn = get_db()
     
     # myposts = conn.execute('''
-    #                       SELECT * FROM users;
+    #                       SELECT * FROM user;
     #                       ''').fetchall()
     # conn.close()
     
     myposts = 'placeholder'
     
     return render_template('index.html', myposts=myposts)
-    """
+"""
 
-    dbschemasetup = '''DROP TABLE IF EXISTS users;
+    dbschemasetup = '''DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS post;
 
-CREATE TABLE users (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-username TEXT UNIQUE NOT NULL,
-ext TEXT NOT NULL,
-email TEXT
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL
 );
-    '''
+
+CREATE TABLE post (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  author_id INTEGER NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  FOREIGN KEY (author_id) REFERENCES user (id)
+);
+'''

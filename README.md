@@ -2,15 +2,38 @@
 
 ![my_intro](/images/web_app_generator.png)
 
-Need quickly generate a Flask project within minute, and freedom of fully control and manage suitable Flask structure for your project requirements. 
-This Flask web app generator may what you looking for.
-
-Need a Flask project spun up fast?  Like, "I need it yesterday" fast?  Forget boilerplate headaches and wrestling with project structure.  This Flask web app generator might just be your new best friend.  Get up and running in minutes, and still have complete control. 
+Need a Flask project spun up fast?  Like, "I need it yesterday" fast? within minute? Forget boilerplate headaches and wrestling with Flask project structure. This Flask web app generator might just be your new best friend. 
+Get up and running in minutes, and still have complete control. 
 Intrigued?  You should be. 
 
-This article elaborate a step-by-step guide on creating a basic Flask web application using Python. We'll cover everything from setting up your development environment to running your first webpage. Perfect for beginners, this guide requires no prior web development experience and will equip you with the foundational knowledge to start building your own Python web apps with Flask Web templates.
+This article elaborate a step-by-step guide on creating a basic Flask web application using Python. We'll cover everything from setting up your development environment to running your first webpage default with a simple blog web site template.
+Perfect for beginners, this guide requires no prior web development experience and will equip you with the foundational knowledge to start building your own Python web apps with Flask Web framework.
 
-A Flask web app generator is a command-line tool with the goal to quickly bootstrap the creation of new Flask projects.  
+This Flask web app generator is a command-line tool with the goal to quickly bootstrap the creation of new Flask projects.  
+
+### Basic file structure layout
+
+What you will get once ran the script.
+
+```python
+/home/user/Projects/file-structure
+├── app/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── routes.py
+│   ├── templates/
+│   │   └── index.html
+│   └── static/
+│       └── css/
+│           └── main.css
+│          
+├── .venv/
+├── pyproject.toml
+├── config.py
+├── LICENSE
+└── README.md
+```
 
 Instead of manually setting up the basic project structure, creating files, and installing core dependencies, a generator automates these repetitive tasks.  It typically provides a pre-configured template or skeleton project that includes:
 
@@ -29,7 +52,7 @@ allow to create flask app with single script
 create necessary flask structure and basic files to get flask web app running
 simple blog page sample from [foundation][1]
 
-what this script can and cannot do
+## what this script can and cannot do
 
 can
 - create folders and files
