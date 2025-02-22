@@ -6,8 +6,10 @@ from MyVar import myclassvar
 from platform import python_version
 from pathlib import Path
 
+# 
 basedir = os.path.abspath(os.path.dirname(__name__))
 
+# setup argument 
 parser = argparse.ArgumentParser(description='create python flask web app and others')
 parser.add_argument('-p', '--path', dest='path', metavar='path name', action='store', default=Path(basedir).parents[0])
 parser.add_argument(dest='foldername', metavar='foldername', nargs='?', action='store')
