@@ -58,7 +58,7 @@ What you will get once ran the script.
 
 ![mac_output](/images/mac_output.gif)
 
-<img src="/images/mac_output.gif" alt="mac output" width="1500" height="1600">
+<img src="/images/mac_output.gif" alt="mac output" width="500" height="300">
 
 Instead of manually setting up the basic project structure, creating files, and installing core dependencies, a generator automates these repetitive tasks.  It typically provides a pre-configured template or skeleton project that includes:
 
