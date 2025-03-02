@@ -85,7 +85,12 @@ py -m venv \<path\>
 
 Python "Virtual Environments" are essential tools for managing dependencies in your Python projects.  They allow you to create isolated spaces where you can install specific versions of Python packages without affecting your system-wide Python installation or other projects.  Think of it like having separate containers for each of your projects, each with its own set of tools.  This is crucial because different projects often require different (and sometimes conflicting) versions of the same library.  Without virtual environments, installing a package for one project might break another project that relies on a different version.  By using virtual environments, you ensure that your projects remain independent and avoid dependency conflicts, leading to a much cleaner and more manageable development workflow.  This also makes it easier to share your projects, as you can specify the exact dependencies needed within the environment, ensuring anyone can recreate the same setup.
 
+
+### install dependencies
+
+```python
 python3 -m pip install -r requirements.txt
+```
 
 
 what this repo can offer
