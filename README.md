@@ -27,9 +27,9 @@ This Flask web app generator is a command-line tool with the goal to quickly boo
 ```python
 # python3 my_argparse.py <foldername> -p <path> -a <app>
 
-*** give a foldername; accept alphanumeric characters, hyphen and underscores symbols only 
-** path to create flask files structure; default value parent directory
-* app file structure to be generate; default value "flask", for future usage.
+*** give a foldername; positional argument. accept alphanumeric characters, hyphen and underscores symbols only 
+** path to create flask files structure; option with default value parent directory
+* app file structure to be generate; option with default value "flask", for future usage.
 ```
 
 ## Basic file structure layout
@@ -54,26 +54,16 @@ What you will get once ran the script.
 └── README.md
 ```
 
+## Output on file structure after script ran 
 
-## Quick demo 
+![my_intro](/images/list_re.png)
 
 <img src="/images/mac_output2.gif" alt="mac output" width="600" height="400">
 
 
-
-allow to create flask app with single script
-create necessary flask structure and basic files to get flask web app running
 simple blog page sample from [foundation][1]
 
-## what this script can and cannot do
-
-can
-- create folders and files
-- insert basic content and code
-
-cannot
-- setup virtual env
-- install python package
+## 
 
 ```python
 python -m venv .venv
@@ -142,3 +132,13 @@ Additional Tips
 Bagaimana untuk membuat aplikasi kelalang dengan skrip python
 
 working on it gif as animation
+
+## what this script can and cannot do
+
+can
+- create folders and files
+- insert basic content and code
+
+cannot
+- setup virtual env
+- install python package
