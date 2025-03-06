@@ -61,7 +61,7 @@ What you will get once ran the script.
 <img src="/images/mac_output2.gif" alt="mac output" width="600" height="400">
 
 
-simple blog page sample from [foundation][1]
+Simple blog page sample from [foundation][1]
 
 ![my_intro](/images/blog_page.png)
 
@@ -104,18 +104,15 @@ This also makes it easier to share your projects, as you can specify the exact d
 python3 -m pip install -r requirements.txt
 ```
 
-### run  flask app
+### Run flask app
+
+    flask run --debug
 
 
-    1. Install Flask: Open your terminal and run:
-   pip install Flask
-    
-    1. Create a Project Directory: Create a new directory for your project and navigate into it:
-   mkdir my_flask_app
-   cd my_flask_app
-    
-    1. Create a Python File: Inside your project directory, create a new Python file, e.g., app.py.
-    2. Write Your Flask App: Open app.py and add the following code:
+
+
+
+
 
 from flask import Flask
 
