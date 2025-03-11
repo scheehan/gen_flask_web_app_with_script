@@ -25,11 +25,11 @@ This Flask web app generator is a command-line tool with the goal to quickly boo
 ## Generator accepted arguments
 
 ```python
-# python3 my_argparse.py <foldername> -p <path> -a <app>
+> python3 my_argparse.py <foldername> -p <path> -a <app>
 
 *** give a foldername; positional argument. accept alphanumeric characters, hyphen and underscores symbols only 
-** path to create flask files structure; option with default value parent directory
-* app file structure to be generate; option with default value "flask", for future usage.
+** path to create flask files structure; optional argument with default value parent directory
+* app file structure to be generate; optional argument with default value "flask", for future usage.
 ```
 
 ## Basic file structure layout
@@ -79,14 +79,15 @@ cd
 ### enable virtual env
 
 ```python
-python -m venv .venv
+> python -m venv .venv
 
+Linux | MacOS 
+> python3 -m venv \<path\>  
+> source \<path\>/bin/activate
 
-python3 -m venv \<path\>  
-source \<path\>/bin/activate
-
-py -m venv \<path\>  
-\<DIR\>\Scripts\activate
+Windows
+> py -m venv \<path\>  
+> \<DIR\>\Scripts\activate
 ```
 
 Python "Virtual Environments" are essential tools for managing dependencies in your Python projects. 
