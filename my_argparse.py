@@ -3,10 +3,9 @@ import argparse, os, sys, re
 # collection of files content to be insert into respective docs
 from MyVar import myclassvar
 
-from platform import python_version
 from pathlib import Path
 
-# 
+# locate base directory
 basedir = os.path.abspath(os.path.dirname(__name__))
 
 # setup argument 
@@ -17,7 +16,7 @@ parser.add_argument('-a', '--app', metavar='app name', dest='progr', action='sto
 
 args = parser.parse_args()
 
-# map respective parameter data into local var
+# map respective parameter data into local variable
 myfoldername = args.foldername
 mypath = args.path
 myapp = args.progr
