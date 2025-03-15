@@ -5,14 +5,16 @@ from MyVar import myclassvar
 
 from pathlib import Path
 
-# locate base directory
+# locate base directory of this python file
 basedir = os.path.abspath(os.path.dirname(__name__))
 
 # setup argument 
 parser = argparse.ArgumentParser(description='create python flask web app and others')
+
+# create positional and optional arguments 
+parser.add_argument(dest='foldername', metavar='foldername', nargs='?', action='store', default='myproject')
 parser.add_argument('-p', '--path', dest='path', metavar='path name', action='store', default=Path(basedir).parents[0])
-parser.add_argument(dest='foldername', metavar='foldername', nargs='?', action='store')
-parser.add_argument('-a', '--app', metavar='app name', dest='progr', action='store', default='flask')
+parser.add_argument('-a', '--app', dest='progr', metavar='app name', action='store', default='flask')
 
 args = parser.parse_args()
 
