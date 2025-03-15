@@ -107,8 +107,8 @@ python3 -m pip install -r requirements.txt
 
 Your app should be running at http://127.0.0.1:5000/.
 
-Additional Tips
-    • Templates: Create an index.html file in a templates folder to render HTML.
+Additional Tips  
+    • Templates: Create an index.html file in a templates folder to render HTML.  
     • Static Files: Use a static folder for CSS, JavaScript, and images.
 
 
