@@ -12,7 +12,7 @@ basedir = os.path.abspath(os.path.dirname(__name__))
 parser = argparse.ArgumentParser(description='create python flask web app and others')
 
 # create positional and optional arguments 
-parser.add_argument(dest='foldername', metavar='foldername', nargs='?', action='store', default='myproject')
+parser.add_argument('filename', dest='foldername', metavar='foldername', nargs='?', action='store', default='myproject')
 parser.add_argument('-p', '--path', dest='path', metavar='path name', action='store', default=Path(basedir).parents[0])
 parser.add_argument('-a', '--app', dest='progr', metavar='app name', action='store', default='flask')
 
