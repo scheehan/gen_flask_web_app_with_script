@@ -30,7 +30,7 @@ subfoldernames = ['templates', 'static']
 
 def main():
     try:
-        # filename most be alphanumeric characters and underscores only
+        # filename most be alphanumeric characters, underscores and hyphen only
         if re.match(r'[A-Za-z0-9_-]+$', myfoldername):
             Path(mypath, myfoldername).mkdir()
             Path(mypath, myfoldername, 'app').mkdir()
