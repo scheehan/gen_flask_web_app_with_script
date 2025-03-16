@@ -17,7 +17,7 @@ It typically provides a pre-configured template or skeleton project that include
 **Configuration files**: It might set up basic configuration files for database connections, secret keys, or other project-specific settings.
 Example code: A generator usually provides a simple "Hello, World" example or a more complex demo application to illustrate the basic functionality and structure.
 
-Using a Flask web app generator significantly speeds up the initial development process, allowing developers to focus on the core logic of their application rather than spending time on boilerplate setup.  It also promotes consistency across projects by providing a standardized starting point. While generators are great for getting started quickly, it's still important to understand the underlying structure and configuration they create to effectively customize and extend your Flask applications.
+Using a Flask web app generator significantly speeds up the initial development process, allowing developers to focus on the core logic of their application rather than spending time on boilerplate setup.  It also promotes consistency across projects by providing a standardised starting point. While generators are great for getting started quickly, it's still important to understand the underlying structure and configuration they create to effectively customize and extend your Flask applications.
 
 This article elaborate a step-by-step guide on creating a basic Flask web application using Python, covering everything from setting up your development environment to running your first webpage default with a simple blog web site template.
 Perfect for beginners, this guide requires no prior web development experience and will equip you with the foundational knowledge to start building your own Python web apps with Flask Web framework.
@@ -74,7 +74,7 @@ Simple blog page sample from [foundation][1]
 ### clone repo
 
 ```html
-git clone https://
+git clone https://github.com/scheehan/gen_flask_web_app_with_script.git
 cd 
 ```
 
@@ -98,12 +98,12 @@ Windows
 ### install dependencies
 
 ```python
-python3 -m pip install -r requirements.txt
+> python3 -m pip install flask
 ```
 
 ### Run flask app
 
-    flask run --debug
+    > flask run --debug
 
 Your app should be running at http://127.0.0.1:5000/.
 
