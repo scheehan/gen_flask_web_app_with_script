@@ -1,6 +1,7 @@
 # How to create flask app with python script
 
-![my_intro](/images/web_app_generator.png)
+[![my_intro](/images/web_app_generator.png)](https://youtu.be/IkWWsGQ8eME)
+
 
 Need a Flask project spun up fast?  Like, "I need it yesterday" fast? within minute? Forget boilerplate headaches and wrestling with Flask project structure. This Flask web app generator might just be your new best friend. 
 Get up and running in minutes, and still have complete control. 
