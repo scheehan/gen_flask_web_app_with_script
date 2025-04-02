@@ -64,7 +64,7 @@ What you will get once ran the script.
 <img src="/images/mac_output2.gif" alt="mac output" width="600" height="400">
 
 
-Simple blog page sample from [foundation][1]
+Simple blog page sample from [foundation][1]. more about HTML builerplate can refer to [here][3]
 
 ![my_intro](/images/blog_page.png)
 
@@ -115,3 +115,4 @@ Additional Tips
 
 [1]: https://get.foundation/templates.html
 [2]: https://docs.python.org/3/library/argparse.html
+[3]: https://html5boilerplate.com/
